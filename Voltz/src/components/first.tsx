@@ -1,4 +1,5 @@
 import { component$ } from '@builder.io/qwik';
+import Form from './form';
 
 export default component$(() => {
 
@@ -11,7 +12,7 @@ export default component$(() => {
                 </div>
 
                 <div class="right min-w-[25vw]">
-                    here goes the form
+                    <Form/>
                 </div>
 
             </div>
