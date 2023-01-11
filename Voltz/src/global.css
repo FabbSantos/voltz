@@ -22,7 +22,7 @@
     text-decoration: none;
 }
 body {
-  background-color: #fff;
+  background-color: #000;
   font-family: 'Montserrat', sans-serif;
   padding: 0;
   margin: 0;
@@ -30,13 +30,28 @@ body {
   list-style-type: none;
 }
 
+
 main {
-  max-width: 760px;
+  //max-width: 1400px;
   margin: 0 auto;
-  background-color: white;
+  background-color: #fff;
+  color: #000;
   border-radius: 5px;
   box-shadow: 0px 0px 130px -50px var(--qwik-light-purple);
   overflow: hidden;
+}
+.outlined {
+  color: black;
+  text-shadow:
+    -1px -1px 0 #fff,
+     0   -1px 0 #fff,
+     1px -1px 0 #fff,
+     1px  0   0 #fff,
+     1px  1px 0 #fff,
+     0    1px 0 #fff,
+    -1px  1px 0 #fff,
+    -1px  0   0 #fff;
+
 }
 
 h1,
@@ -44,13 +59,6 @@ h2 {
   margin: 0 0 5px 0;
   font-family: 'Questrial', sans-serif;
   font-weight: 900;
-}
-
-
-
-a,
-a:visited {
-  color: var(--voltz-blue);
 }
 
 a:hover {

@@ -1,21 +1,26 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
+import First from '~/components/first';
+import Second from '~/components/second';
+import Third from '~/components/third';
 // import { Link } from '@builder.io/qwik-city';
 
 export default component$(() => {
   return (
     <div>
-     <h1>alo</h1>
+      <First/>
+      <Second/>
+      <Third/>
     </div>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'Welcome to Qwik',
+  title: 'Consórcio Voltz',
   meta: [
     {
       name: 'description',
-      content: 'Qwik site description',
+      content: 'Conheça o consórcio Voltz!',
     },
   ],
 };

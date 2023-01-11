@@ -20,7 +20,9 @@ header ul {
 header li {
   display: inline-block;
   margin: 0;
+  margin-left: 6em;
   padding: 0;
+  text-align: left;
 }
 
 header li a {
