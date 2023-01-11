@@ -1,7 +1,7 @@
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
 import { QwikLogo } from '../icons/qwik';
 import styles from './header.css?inline';
-import PhoneIc
+import {PhoneIcon} from "heroicons-qwik/24/outline";
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -15,6 +15,8 @@ export default component$(() => {
       </div>
       <ul>
         <li>
+          <span><PhoneIcon/></span>
+          
           <a href="https://qwik.builder.io/docs/components/overview/" target="_blank">
             Docs
           </a>
