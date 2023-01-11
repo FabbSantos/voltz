@@ -1,6 +1,7 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import First from '~/components/first';
+import Fourth from '~/components/fourth';
 import Second from '~/components/second';
 import Third from '~/components/third';
 // import { Link } from '@builder.io/qwik-city';
@@ -11,6 +12,7 @@ export default component$(() => {
       <First/>
       <Second/>
       <Third/>
+      <Fourth/>
     </div>
   );
 });

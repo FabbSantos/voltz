@@ -46,7 +46,7 @@ export default component$(() => {
                         </div>
                     </div>
 
-                    <button class="outline-none bg-transparent py-3 px-20 font-medium text-xl border border-voltz_blue rounded-[10px] hover:outline-none hover:bg-voltz_blue transition-all mt-[4em]">
+                    <button class="outline-none bg-transparent py-3 px-20 font-medium text-xl border hover:text-black border-voltz_blue rounded-[10px] hover:outline-none hover:bg-voltz_blue transition-all mt-[4em]">
                         Saiba Mais
                     </button>
                 </div>
