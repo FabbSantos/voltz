@@ -30,7 +30,9 @@ export default component$(() => {
                 </div>
             </div>
             <div class="flex justify-center items-center">
-                <button class= "text-white outline-none bg-transparent py-3 px-20 font-medium text-xl border border-voltz_blue rounded-[10px] hover:outline-none hover:text-black hover:bg-voltz_blue transition-all mt-[4em]">
+                <button class= "text-white outline-none bg-transparent py-3 px-20 font-medium text-xl border border-voltz_blue rounded-[10px] hover:outline-none hover:text-black hover:bg-voltz_blue transition-all mt-[4em]"
+                    onClick$={() => { window.scrollTo(0, 0); }}
+                >
                     Saiba Mais
                 </button>
             </div>

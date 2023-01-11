@@ -13,6 +13,11 @@
 :root {
   --voltz-blue: #0057E1;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 *, 
 *:after,
 *:before {
@@ -76,7 +81,6 @@ code {
 }
 
 footer {
-  padding: 15px;
   text-align: center;
   font-size: 0.8em;
 }
