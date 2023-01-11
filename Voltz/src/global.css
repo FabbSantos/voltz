@@ -1,0 +1,79 @@
+/**
+ * WHAT IS THIS FILE?
+ *
+ * Globally applied styles. No matter which components are in the page or matching route,
+ * the styles in here will be applied to the Document, without any sort of CSS scoping.
+ *
+ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Questrial&display=swap');
+
+:root {
+  --voltz-blue: #0057E1;
+}
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  list-style-type: none;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 130px -50px var(--qwik-light-purple);
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  margin: 0 0 5px 0;
+  font-family: 'Questrial', sans-serif;
+  font-weight: 900;
+}
+
+
+
+a,
+a:visited {
+  color: var(--voltz-blue);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+code {
+  font-family: Menlo, Monaco, Courier New, monospace;
+  font-size: 0.9em;
+  background-color: rgb(224, 224, 224);
+  padding: 2px 4px;
+  border-radius: 3px;
+  border-bottom: 2px solid #bfbfbf;
+}
+
+footer {
+  padding: 15px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
