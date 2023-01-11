@@ -14,14 +14,15 @@ export default component$(() => {
         </a>
       </div>
       <ul>
-        <li>
-          <span><PhoneIcon/></span>
-          
-          <a href="https://qwik.builder.io/docs/components/overview/" target="_blank">
-            Docs
+        <li class="flex flex-row justify-evenly">
+          <span class="h-3 w-3">
+            <PhoneIcon className="h-6 w-6 text-blue-500"/>
+          </span>
+          <a class="text-left" href="https://qwik.builder.io/docs/components/overview/" target="_blank">
+            ATENDIMENTO<br /><b>(16) 2103-3535</b>
           </a>
         </li>
-        <li>
+        <li >
           <a href="https://qwik.builder.io/examples/introduction/hello-world/" target="_blank">
             Examples
           </a>
