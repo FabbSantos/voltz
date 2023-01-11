@@ -5,8 +5,8 @@ export default component$(() => {
 
     return (
         <section class="bg-black text-white min-h-[70vh]">
-            <div class="flex flex-col md:flex-row justify-around items-center py-10">
-                <div class="left gap-3 flex flex-col justify-center items-center text-center min-w-[50%] max-w-[50%]">
+            <div class="flex px-8 md:px-0 flex-col md:flex-row justify-around items-center py-10">
+                <div class="left gap-3 flex flex-col justify-center items-center text-center min-w-[50%] md:max-w-[50%]">
                     <picture>
                         <img src="./src/img/plug.png" loading='lazy' alt="100% elétrico" height=" 150px" width="140px" />
                     </picture>
@@ -17,7 +17,7 @@ export default component$(() => {
                         <img src="./src/img/line.png" alt="separador" />
                     </picture>
 
-                    <div class="flex justify-evenly flex-row min-w-[60%] max-w-[80%]">
+                    <div class="flex justify-evenly gap-5 flex-row min-w-[60%] max-w-[80%]">
                         <picture>
                             <img src="./src/img/110v.png" loading='lazy' alt="110 volts" height="120px" width="120px" />
                         </picture>
@@ -31,8 +31,8 @@ export default component$(() => {
                         O usuário pode optar por remover as baterias para carregá-las ou conectar a própria moto à fonte de energia.
                     </p>
                 </div>
-                <div class="right flex flex-col justify-center items-center text-center min-w-[50%] max-w-[50%]">
-                    <div class="flex flex-row justify-center items-start">
+                <div class="right flex flex-col justify-center items-center text-center min-w-[50%] mt-10 md:mt-0 md:max-w-[50%]">
+                    <div class="flex gap-2 md:gap-0 flex-row justify-center items-start">
                         <div class="flex flex-col justify-start items-center min-w-[50%] max-w-[50%] h-full gap-3">
                             <picture>
                                 <img src="./src/img/zero-emission.png" alt="Sem emissão de gases poluentes" loading='lazy' height=" 170px" width="140px" />

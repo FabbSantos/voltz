@@ -19,6 +19,7 @@ export default component$(() => {
         email: '',
         tel: '',
         estado:'',
+        cidade:''
     })
 
     useStyles$(form)
@@ -30,10 +31,10 @@ export default component$(() => {
             <h3 class="font-extrabold text-white text-2xl pb-6"> Quer saber mais? </h3 >
 
             <div class="flex flex-row gap-2">
-                <fieldset>
+                <fieldset class="min-w-[50%]">
                     <input required id="name" type="text" placeholder='Nome' maxLength={20} onInput$={(e) => (data.name = (e.target as HTMLInputElement).value)} />
                 </fieldset>
-                <fieldset>
+                <fieldset class="min-w-[48%]">
                     <input required id="lastname" type="text" placeholder='Sobrenome' maxLength={30} onInput$={(e) => (data.lastname = (e.target as HTMLInputElement).value)} />
                 </fieldset>
             </div>
@@ -50,40 +51,46 @@ export default component$(() => {
                 <fieldset>
                     <select required id="estado"  placeholder='Estado' onInput$={(e) => (data.estado = (e.target as HTMLInputElement).value)} 
                     >
-                        <option value="Acre (AC)">add</option>
-                        <option value="Alagoas (AL)"></option>
-                        <option value="Amapá (AP)"></option>
-                        <option value="Amazonas (AM)"></option>
-                        <option value="Bahia (BA)"></option>
-                        <option value="Ceará (CE)"></option>
-                        <option value="Distrito Federal (DF)"></option>
-                        <option value="Espírito Santos (ES)"></option>
-                        <option value="Goias (GO)"></option>
-                        <option value="Maranhão (MA)"></option>
-                        <option value="Mato Grosso (MT)"></option>
-                        <option value="Mato Grosso do Sul (MS)"></option>
-                        <option value="Minas Gerais (MG)"></option>
-                        <option value="Pará (PA)"></option>
-                        <option value="Paraíba (PB)"></option>
-                        <option value="Paraná (PR)"></option>
-                        <option value="Pernambuco (PE)"></option>
-                        <option value="Piauí (PI)"></option>
-                        <option value="Rio de Janeiro (RJ)"></option>
-                        <option value="Rio Grande do Norte (RN)"></option>
-                        <option value="Rio Grande do Sul (RS)"></option>
-                        <option value="Rondônia (RO)"></option>
-                        <option value="Roraima (RR)"></option>
-                        <option value="Santa Catarina (SC)"></option>
-                        <option value="São Paulo (SP)"></option>
-                        <option value="Sergipe (SE)"></option>
-                        <option value="Tocantins (TO)"></option>
+                        <option value="Acre (AC)">Acre (AC)</option>
+                        <option value="Alagoas (AL)">Alagoas (AL)</option>
+                        <option value="Amapá (AP)">Amapá (AP)</option>
+                        <option value="Amazonas (AM)">Amazonas (AM)</option>
+                        <option value="Bahia (BA)">Bahia (BA)</option>
+                        <option value="Ceará (CE)">Ceará (CE)</option>
+                        <option value="Distrito Federal (DF)">Distrito Federal (DF)</option>
+                        <option value="Espírito Santos (ES)">Espírito Santos (ES)</option>
+                        <option value="Goias (GO)">Goias (GO)</option>
+                        <option value="Maranhão (MA)">Maranhão (MA)</option>
+                        <option value="Mato Grosso (MT)">Mato Grosso (MT)</option>
+                        <option value="Mato Grosso do Sul (MS)">Mato Grosso do Sul (MS)</option>
+                        <option value="Minas Gerais (MG)">Minas Gerais (MG)</option>
+                        <option value="Pará (PA)">Pará (PA)</option>
+                        <option value="Paraíba (PB)">Paraíba (PB)</option>
+                        <option value="Paraná (PR)">Paraná (PR)</option>
+                        <option value="Pernambuco (PE)">Pernambuco (PE)</option>
+                        <option value="Piauí (PI)">Piauí (PI)</option>
+                        <option value="Rio de Janeiro (RJ)">Rio de Janeiro (RJ)</option>
+                        <option value="Rio Grande do Norte (RN)">Rio Grande do Norte (RN)</option>
+                        <option value="Rio Grande do Sul (RS)">Rio Grande do Sul (RS)</option>
+                        <option value="Rondônia (RO)">Rondônia (RO)</option>
+                        <option value="Roraima (RR)">Roraima (RR)</option>
+                        <option value="Santa Catarina (SC)">Santa Catarina (SC)</option>
+                        <option value="São Paulo (SP)">São Paulo (SP)</option>
+                        <option value="Sergipe (SE)">Sergipe (SE)</option>
+                        <option value="Tocantins (TO)">Tocantins (TO)</option>
                     </select>
                 </fieldset>
+
+                <fieldset>
+                    <input required id="cidade" type="cidade" placeholder='Cidade' maxLength={50} onInput$={(e) => (data.cidade = (e.target as HTMLInputElement).value)} />
+                </fieldset>
+
             </div>
 
             <fieldset class="hover:border-transparent transition">
-                <button id="submit" type="submit" value="submit">Get in touch</button>
+                <button id="submit" type="submit" value="submit">Enviar</button>
             </fieldset>
+            
 
         </form>
     )
@@ -102,6 +109,8 @@ export const form = `
   fieldset {
     border: 1px solid white;
     border-radius: 10px;
+    min-width: 45%;
+    max-width: 100%;
     margin-bottom: 20px;
   }
 
@@ -126,6 +135,11 @@ export const form = `
   }
   select {
     width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px; 
+
   }
 
   input {
