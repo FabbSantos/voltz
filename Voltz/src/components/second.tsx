@@ -14,7 +14,7 @@ export default component$(() => {
                         100% elétrica
                     </h3>
                     <picture>
-                        <img src="./src/img/line.png" alt="separador" />
+                        <img src="./src/img/line.png" alt="separador" loading='lazy' width="310px" height="30px" />
                     </picture>
 
                     <div class="flex justify-evenly gap-5 flex-row min-w-[60%] max-w-[80%]">
