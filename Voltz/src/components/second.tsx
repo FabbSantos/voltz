@@ -1,10 +1,10 @@
 import { component$ } from '@builder.io/qwik';
-import plug from "./src/img/plug.png";
-import line from "./src/img/line.png";
-import voltz1 from "./src/img/110v.png";
-import voltz2 from "./src/img/220v.png";
-import emission from "./src/img/zero-emission.png"
-import sound from "./src/img/no-sound.png"
+import plug from "../img/plug.png";
+import line from "../img/line.png";
+import voltz1 from "../img/110v.png";
+import voltz2 from "../img/220v.png";
+import emission from "../img/zero-emission.png"
+import sound from "../img/no-sound.png"
 
 export default component$(() => {
 

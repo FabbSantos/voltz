@@ -1,9 +1,9 @@
 import { component$ } from '@builder.io/qwik';
-import voltz from "./src/img/voltz_white.webp"
-import association from "./src/img/association.webp"
-import bank from "./src/img/banco_central.webp"
-import reclame from "./src/img/reclame_aqui.webp"
-import ancora from "./src/img/ancora.webp"
+import voltz from "../img/voltz_white.webp"
+import association from "../img/association.webp"
+import bank from "../img/banco_central.webp"
+import reclame from "../img/reclame_aqui.webp"
+import ancora from "../img/ancora.webp"
 
 export default component$(() => {
 

@@ -1,7 +1,7 @@
 import { component$ } from '@builder.io/qwik';
-import img1 from "./src/img/9.png"
-import img2 from "./src/img/10.png"
-import img3 from "./src/img/3.png"
+import img1 from "../img/9.png"
+import img2 from "../img/10.png"
+import img3 from "../img/3.png"
 
 export default component$(() => {
 
