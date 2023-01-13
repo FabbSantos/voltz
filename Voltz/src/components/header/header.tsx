@@ -1,5 +1,5 @@
 import { component$, useStylesScoped$ } from '@builder.io/qwik';
-import { QwikLogo } from '../icons/qwik';
+import { VoltzLogo } from '../icons/qwik';
 import styles from './header.css?inline';
 // import {PhoneIcon} from "heroicons-qwik/24/outline";
 
@@ -9,7 +9,7 @@ export default component$(() => {
   return (
     <header class="flex  flex-row justify-evenly max-w-[1300px] mx-auto">
       <div class="logo md:m-5 p-4">
-        <QwikLogo />
+        <VoltzLogo />
       </div>
       <div class="menu block md:hidden absolute h-[23px] w-[35px] top-[15px] right-[20px] z-[2]">
         <input class="block md:hidden  absolute h-[32px] w-[30px] top-[20px] right-[20px] z-[10] opacity-0" type="checkbox" ></input>

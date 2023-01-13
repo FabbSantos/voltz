@@ -1,5 +1,10 @@
 import { component$ } from '@builder.io/qwik';
-
+import plug from "./src/img/plug.png";
+import line from "./src/img/line.png";
+import voltz1 from "./src/img/110v.png";
+import voltz2 from "./src/img/220v.png";
+import emission from "./src/img/zero-emission.png"
+import sound from "./src/img/no-sound.png"
 
 export default component$(() => {
 
@@ -8,21 +13,21 @@ export default component$(() => {
             <div class="flex px-8 md:px-0 flex-col md:flex-row justify-around items-center py-10">
                 <div class="left gap-3 flex flex-col justify-center items-center text-center min-w-[50%] md:max-w-[50%]">
                     <picture>
-                        <img src="./src/img/plug.png" loading='lazy' alt="100% elétrico" height=" 150px" width="140px" />
+                        <img src={plug} loading='lazy' alt="100% elétrico" height=" 150px" width="140px" />
                     </picture>
                     <h3 class="font-extrabold text-voltz_blue text-3xl">
                         100% elétrica
                     </h3>
                     <picture>
-                        <img src="./src/img/line.png" alt="separador" loading='lazy' width="310px" height="30px" />
+                        <img src={line} alt="separador" loading='lazy' width="310px" height="30px" />
                     </picture>
 
                     <div class="flex justify-evenly gap-5 flex-row min-w-[60%] max-w-[80%]">
                         <picture>
-                            <img src="./src/img/110v.png" loading='lazy' alt="110 volts" height="120px" width="120px" />
+                            <img src={voltz1} loading='lazy' alt="110 volts" height="120px" width="120px" />
                         </picture>
                         <picture>
-                            <img src="./src/img/220v.png" loading="lazy" alt="220 volts" height="120px" width="120px" />
+                            <img src={voltz2} loading="lazy" alt="220 volts" height="120px" width="120px" />
                         </picture>
                     </div>
                     <p class="text-medium text-lg md:text-xl text-center md:max-w-[600px]">
@@ -35,13 +40,13 @@ export default component$(() => {
                     <div class="flex gap-2 md:gap-0 flex-row justify-center items-start">
                         <div class="flex flex-col justify-start items-center min-w-[50%] max-w-[50%] h-full gap-3">
                             <picture>
-                                <img src="./src/img/zero-emission.png" alt="Sem emissão de gases poluentes" loading='lazy' height=" 170px" width="140px" />
+                                <img src={emission} alt="Sem emissão de gases poluentes" loading='lazy' height=" 170px" width="140px" />
                             </picture>
                             <p class="font-medium text-xl text-center">Sem emissão de gases poluentes.</p>
                         </div>
                         <div class="flex flex-col justify-start items-center min-w-[50%] max-w-[50%] h-full gap-2">       
                             <picture>
-                                <img src="./src/img/no-sound.png" alt="Motor silencioso" loading='lazy' height=" 180px" width="150px" />
+                                <img src={sound} alt="Motor silencioso" loading='lazy' height=" 180px" width="150px" />
                             </picture>
                             <p class="font-medium text-xl">Motor silencioso.</p>
                         </div>
