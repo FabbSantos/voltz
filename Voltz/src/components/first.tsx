@@ -4,7 +4,7 @@ import Form from './form';
 export default component$(() => {
 
     return (
-        <section class="flex flex-col md:flex-row justify-around bg-first-bg bg-cover md:min-h-[100vh] bg-no-repeat">
+        <section class="flex flex-col md:flex-row justify-around bg-first-bg bg-cover md:min-h-[90vh] bg-no-repeat">
             <div class="flex flex-col md:flex-row md:pt-16 px-5 justify-around min-w-full">
                 <div class="left text-center">
                     <h1 class="font-extrabold text-5xl mt-[1em]">Consórcio Voltz</h1>
